@@ -1,0 +1,272 @@
+@charset "utf-8";
+/*
+ * css/texteditor.css
+ */
+
+/*
+ * Reset
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+audio, canvas, progress, video { display: inline-block; }
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+html {
+	font-family: "Helvetica", "Droid Sans", "Hiragino Kaku Gothic Pro", sans-serif;
+	font-size: 62.5%;
+	text-size-adjust: 100%;
+}
+body {
+	line-height: 1.4;
+}
+a {
+	background-color: transparent;
+}
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn {
+	font-style: italic;
+}
+h1 {
+	margin: 0.67em 0;
+}
+mark {
+	background: #ff0;
+	color: #000000;
+}
+small {
+	font-size: 80%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+pre {
+	overflow: auto;
+}
+code, kbd, pre, samp {
+	font-family: monospace, serif;
+	@include fs10;
+}
+button, input, optgroup, select, textarea {
+	margin: 0;
+	font-family: inherit;
+	font: inherit;
+}
+button {
+	overflow: visible;
+}
+button, select {
+	text-transform: none;
+}
+button, select {
+	text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	appearance: none;
+	border: 0 none;
+	cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input {
+	line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+input[type="search"] {
+	appearance: textfield;
+	box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	appearance: none;
+	appearance: none;
+}
+fieldset {
+	border: 1px solid silver;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+legend {
+	border: 0;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+}
+optgroup {
+	font-weight: bold;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	padding: 0;
+}
+
+/*
+ * Base
+ */
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+	color: #333333;
+	@include fs-base;
+}
+h1, h2, h3, h4, h5, h6, div, p, ul, ol, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	word-break: break-all;
+	font-weight: normal;
+	line-height: 1.4em;
+}
+ul, ol {
+	list-style: none;
+	list-style-image: none;
+}
+a {
+	display: block;
+	word-break: break-all;
+	text-decoration: none;
+}
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+}
+tr {
+	display: table-row;
+	position: relative;
+	vertical-align: middle;
+}
+td, th {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0;
+}
+img {
+	display: inline-block;
+	vertical-align: middle;
+	user-select: none;
+	max-width: 100%;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+}
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+select {
+	appearance: none;
+}
+button {
+	-webkit-touch-callout: none;
+}
+
+/*
+ * Content
+ */
+.tiny-heading-1,
+.tiny-heading-2,
+.tiny-heading-3,
+.tiny-heading-4,
+.tiny-heading-5,
+.tiny-heading-6 {
+	margin-bottom: 5px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.tiny-heading-1,
+.tiny-heading-2 {
+	height: 45px;
+	background-color: #5eb9bc;
+	color: #ffffff;
+	font-size: 18px;
+	font-size: 1.8rem;
+	text-shadow: -1px -1px 0 rgba(0,0,0,.23);
+	line-height: 45px;
+}
+
+.tiny-heading-3 {
+	border-bottom: 1px solid #5eb9bc;
+}
+
+.tiny-heading-3,
+.tiny-heading-4,
+.tiny-heading-5,
+.tiny-heading-6 {
+	color: #666666;
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+.tiny-deco-1 {
+	color: #f31e00;
+}
+.tiny-deco-2 {
+	color: #f31e00;
+	font-weight: bold;
+}
+.tiny-deco-3 {
+	background-color: #fcf772;
+	color: #f31e00;
+	font-weight: bold;
+}
+.tiny-bold {
+	font-weight: bold;
+}

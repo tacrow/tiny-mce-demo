@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+ * css/page.css
+ */
+
+h1 {
+	color: #333333;
+	font-size: 24px;
+}
+
+body {
+	width: 1040px;
+	margin: 0 auto;
+}
+
+.btn-submit {
+	-webkit-appearance: none;
+	appearance: none;
+	margin-top: 10px;
+	padding: 5px 30px 6px;
+	border: 1px solid #dfdfdf;
+	border-radius: 3px;
+	background-color: #ffffff;
+	color: #333333;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-submit:hover {
+	background-color: #dfdfdf;
+}
